@@ -1,18 +1,17 @@
 package com.example.user.mapformaion;
 
 import android.Manifest;
+import android.content.Intent;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
@@ -68,10 +67,10 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 try {
                     List<Address> addresses = geocoder.getFromLocationName(editText.getText().toString(), 1);
                     LatLng latlng = new LatLng(addresses.get(0).getLatitude(), addresses.get(0).getLongitude());
-                    TextView textView = (TextView)findViewById(R.id.textView);
+           //         TextView textView = (TextView)findViewById(R.id.textView);
                     String name = addresses.get(0).getLatitude()+",";
                     name +=addresses.get(0).getLongitude();
-                    textView.setText(name);
+            //        textView.setText(name);
                     mMap.addMarker(new MarkerOptions().position(latlng).title("Marker in" + editText.getText().toString()));
                     mMap.moveCamera(CameraUpdateFactory.newLatLng(latlng));
                     mMap.moveCamera(CameraUpdateFactory.zoomTo(15));
