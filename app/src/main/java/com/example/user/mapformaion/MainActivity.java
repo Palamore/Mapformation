@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
 
         //logo animation start
+        //not tracking anymore.
         
         if(logo_on){
             logo_on = false;
