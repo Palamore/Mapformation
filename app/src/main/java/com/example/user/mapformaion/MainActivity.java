@@ -1,6 +1,7 @@
 package com.example.user.mapformaion;
 
 import android.Manifest;
+import android.content.Intent;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     protected static final String TAG = "MainActivity";
     protected Location mLastLocation;
     private FusedLocationProviderClient mFusedLocationClient;
+    boolean logo_on = true;
     private static final int RC_LOCATION = 1;
     private EditText editText;
     private GoogleMap mMap;
@@ -46,6 +48,15 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        if(logo_on){
+            logo_on = false;
+            Intent start_intent = new Intent(this, imageAct.class);
+            startActivity(start_intent);
+        }
+
+
+
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
