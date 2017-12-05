@@ -49,6 +49,9 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+        //logo animation start
+        
         if(logo_on){
             logo_on = false;
             Intent start_intent = new Intent(this, imageAct.class);
