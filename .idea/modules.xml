@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Mapformaion.iml" filepath="$PROJECT_DIR$/Mapformaion.iml" />
-      <module fileurl="file://C:\dev\android_final\Mapformaion\Mapformation.iml" filepath="C:\dev\android_final\Mapformaion\Mapformation.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
