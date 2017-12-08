@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "62984564505",
+    "firebase_url": "https://mapformaion.firebaseio.com",
+    "project_id": "mapformaion",
+    "storage_bucket": "mapformaion.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:62984564505:android:0c5b921a15475943",
+        "android_client_info": {
+          "package_name": "com.example.user.mapformaion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "62984564505-93ihgiro1hgn8l1l8lgttalqso4304q0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.user.mapformaion",
+            "certificate_hash": "e85886ba9d71432e1552512d4ae3e5d1e0202e51"
+          }
+        },
+        {
+          "client_id": "62984564505-bpda2fd28l36dqom6nknvfo1ju4mr42a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAc1fs79ZnckBorQFPqXh1hjPYNSbXMBHY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "62984564505-bpda2fd28l36dqom6nknvfo1ju4mr42a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
