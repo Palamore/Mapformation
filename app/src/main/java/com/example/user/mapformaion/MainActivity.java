@@ -238,7 +238,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         selectDialogBuilder
                 .setTitle("해당 키워드를 검색")
                 .setMessage("어디서 검색할까요?")
-                .setPositiveButton("Google에 검색" + cnt_value.elementAt(0),
+                .setPositiveButton("Google에 검색 : " + cnt_value.elementAt(0),
                         new DialogInterface.OnClickListener() {
                             public void onClick(
                                     DialogInterface dialog, int id) {
@@ -250,7 +250,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
                             }
                         })
-                .setNegativeButton("Naver에 검색" + cnt_value.elementAt(1),
+                .setNegativeButton("Naver에 검색 : " + cnt_value.elementAt(1),
                         new DialogInterface.OnClickListener() {
                             public void onClick(
                                     DialogInterface dialog, int id) {
@@ -263,7 +263,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
                             }
                         })
-                .setNeutralButton("나무위키에 검색" + cnt_value.elementAt(2),
+                .setNeutralButton("나무위키에 검색 : " + cnt_value.elementAt(2),
                         new DialogInterface.OnClickListener() {
                             public void onClick(
                                     DialogInterface dialog, int id) {
