@@ -52,8 +52,14 @@ public class WebActivity extends AppCompatActivity {
 
 
         WebView wv = (WebView)findViewById(R.id.web);
+        wv.setWebViewClient(new WebViewClient() {
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                return false;
+            }
+        });
         wv.loadUrl(gUrl);
 
-        finish();
+   //     finish();
     }
 }
